@@ -1,0 +1,23 @@
+python3 –m venv venv && . venv/bin/activate
+
+pip install Django==3.2
+
+pip install djangorestframework
+
+django-admin startproject config .
+
+python manage.py runserver port
+
+python manage.py startapp name
+
+
+python3 manage.py migrate
+config.settings --> Installing_apps
+name_apps.models --> write structure subject
+from Django.db import models
+class Class_name(models.Model):
+    id = default(Primary_key, index)
+    name_field  = models.TypeClass()
+python3 manage.py makemigrations (name app)
+python3 manage.py migrate (name app)
+python manage.py runserver port
